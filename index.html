@@ -1,0 +1,256 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<title>Website</title>
+		<link rel="stylesheet" href="css/two.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<!--FOR EMAIL AND CONTACT NUMBER-->
+
+		<div class="container dark">
+			<div class="wrapper" id="top_div">
+				<div id="left">
+					Email: heartbreakkidhbk97@gmail.com
+				</div>
+				<div id="right">
+					Phone: +977...........
+				</div>
+				<div id="clear"></div>
+			</div>
+
+		</div>
+	<!--FOR LOGO AND SEARCH BUTTON-->
+
+		
+		<div class="container light">
+			<div class="wrapper">
+				<div id="logo">
+					<i class="fa fa-handshake-o" aria-hidden="true"></i>
+				</div>
+
+				<div id="search">
+					<form action="">
+						<input type="text" id="textArea">
+						<input type="button" value="Search" placeholder="Search...." id="buttonArea">
+					</form>
+				</div>
+				<div id="clear"></div>
+			</div>
+
+		</div>
+		<!--FOR TOP MENU-->
+		<div class="container dark">
+			<div class="wrapper">
+
+				<div class="menu">
+					<div class="toggle-bar dark">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+
+
+				<ul class="dark">
+					<li><a href="#top_div">HOME</a></li>
+					<li class="active"><a href="#about">ABOUT</a></li>
+					<li><a href="#contacts">CONTACT</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+				</ul>
+			</div>
+			<div id="clear"></div>
+
+			</div>
+		</div>
+
+			<!--IMAGE SLIDER USING JQUERY PLUGIN CYCLE-->
+			<div class="container">
+				<div class="wrapper">
+				<div id="slideshow" class="cycle-slideshow" data-cycle-fx="fade"
+						data-cycle-timeout="3000"
+						data-cycle-speed="600"
+						data-cycle-pager-fx ="fade"
+						data-cycle-pager="#pager"
+						data-cycle-pager-template = "<a href='#'><img src='{{src}}' height=100 width=150/>"
+						data-cycle-next="#next"
+						data-cycle-prev="#prev"
+						data-cycle-manual-fx="scrollHorz"
+						
+						
+						data-cycle-caption="#adv-custom-caption"
+						data-cycle-caption-template="Slide{{slideNum}} : {{cycleTitle}}">
+
+								<img src="images/webdesign1.png" data-cycle-title="firstws">
+								<img src="images/webdesign2.png" data-cycle-title="Secondtws">
+								<img src="images/webdesign3.jpg" data-cycle-title="Thirdws">
+								<img src="images/webdesign4.jpg" data-cycle-title="Fourthws">
+								
+								<div id="adv-custom-caption" class="center"></div>
+							</div>
+							
+							<div id="pager"></div>
+							<div id="leftRight">
+							<i  class="fa fa-arrow-left" id="prev" aria-hidden="true"></i>
+							<i  class="fa fa-arrow-right" id="next" aria-hidden="true"></i>
+							</div>
+							
+				
+			</div>
+		</div>
+
+		<div class="container light">
+			<div class="wrapper ">
+			     
+				<!--ABOUT-->
+			     <div class="about">
+			     	<div id="about"></div>
+			     	<h3>ABOUT US</h3>
+			     	<p>
+			     		
+			     		Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			     		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <button id="showBtn" class="button">Read More</button><span id="para">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			     		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			     		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			     		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			     		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			     		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+			     	</p>
+			     	<button id="btn" class="button">Hide</button>
+			     </div>	
+			     
+				
+				<!--CONTACT FORM-->
+
+			     <div class="text_second">
+				<div id="contacts"></div>	
+				<h3>Contacts</h3>
+				
+
+				<form class="forms" action="">
+								<ul>
+									<li class="title dark">Who Are You ??</li>
+									<li class="fields">
+										<label>First Name:</label><br/>
+										<input type="text" id="first_name" class="req"><br/>
+										<label>Middle Name:</label><br/>
+										<input type="text" id="middle_name"><br/>
+										<label>Last Name:</label><br/>
+										<input type="text" id="last_name"><br/>
+										<label>Email:</label><br/>
+										<input type="text" id="email" class="req"><br/>
+									</li>
+									<li class="title dark">Where Are You ??</li>
+									<li class="fields">
+										<label>City:</label><br/>
+										<input type="text" id="city"><br/>
+										<label>State:</label><br/>
+										<input type="text" id="state" class="required"><br/>
+										<label>Country:</label><br/>
+										<input type="text" id="country"><br/>
+									</li>
+									<li class="title dark">What Do You Do ??</li>
+									<li class="fields">
+										<label>Occupation:</label><br/>
+										<input type="text" id="occupation" class="req"><br/>
+										<label>Company:</label><br/>
+										<input type="text" id="company"><br/>
+										<label>Company Location:</label><br/>
+										<input type="text" id="companylocation"><br/>
+									</li>
+								</ul>
+								<div id="clear"></div>
+								<input type="button" class="button" value="Submit">
+							</form>
+				
+			</div>
+			
+			</div>
+			
+			</div>
+		
+			<!--PORTFOLIO-->
+			<div class="container">
+				<div class="wrapper">
+					<div id="portfolio">
+					<h3>Portfolio</h3>
+					<h3>We Have Created</h3>
+					<div class="text">
+					<div id="portfolioimage">
+						<img src="images/paris.jpg">
+						<p><strong>Paris</strong></p>
+						<p>We built Paris</p>
+					</div>
+				</div>
+				<div class="text">
+					<div id="portfolioimage">
+						<img src="images/newyork.jpg">
+						<p><strong>Newyork</strong></p>
+						<p>We built Newyork</p>
+					</div>
+				</div>
+				<div class="text">
+					<div id="portfolioimage">
+						<img src="images/sanfran.jpg">
+						<p><strong>Sanfran</strong></p>
+						<p>We built Sanfran</p>
+					</div>
+					</div>
+					<h3>What Our Customer Says:</h3>
+					<div class=" cycle-slideshow"
+					 data-cycle-fx="scrollHorz"
+					data-cycle-timeout="3000"
+					data-cycle-slides="> div"
+					>
+						
+						<div class="customer">
+						    <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span>
+						    </h4>
+						</div>
+						<div class="customer">
+						    <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span>
+						    </h4>
+						 </div>
+						 <div class="customer">   
+						 <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span>
+						 </h4>
+						</div>
+
+					</div>
+
+
+					</div>	
+					</div>
+				</div>
+				
+
+				
+		<!--SOCIAL MEDIA LINKS-->
+		<div class="container light">
+			<div class="wrapper">
+				<h3>Find us on:</h3>
+				<div id="footer">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<div id="clear"></div>
+					</ul>
+				</div>
+				<p id="footer">Suraj Adhikari@2017.</p>
+				
+		</div>
+	</div>
+	<div id="top">Top</div>
+		
+		
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquerycycle.js"></script>
+		<script src="js/three.js"></script>
+		<script src="js/four.js"></script>
+
+
+	</body>
+	</html>
